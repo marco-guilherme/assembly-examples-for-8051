@@ -1,0 +1,15 @@
+Project=C:\Users\marco\arquivos\repositorios\assembly-examples-for-8051\1-first-program\first-program.a51
+ProcessorType=1
+DefaultFindDir=G:\Meu Drive\electronics\8051\assembly-8051\1-first-program
+SectorSize=64
+EnablePagedMemory=0
+PagedMemoryControlAddress=0
+NumberOfMemoryPages=1
+SignalType=0
+EnableAutoUpdate=0
+UpdateCount=1000
+Window=8051,first-program.a51,C:\Users\marco\arquivos\repositorios\assembly-examples-for-8051\1-first-program\first-program.a51,87,142,556,1026
+Window=8051,first-program.a51,C:\Users\marco\arquivos\repositorios\assembly-examples-for-8051\1-first-program\first-program.a51,87,142,556,1026
+Window=8051,first-program.a51,C:\Users\marco\arquivos\repositorios\assembly-examples-for-8051\1-first-program\first-program.a51,87,142,556,1026
+Window=Output,Output1,,514,30,728,1184
+Window=Register,Register1,,43,1231,315,1457

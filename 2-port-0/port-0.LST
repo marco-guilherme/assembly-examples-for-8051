@@ -1,0 +1,26 @@
+8051 Assembler           Version 1.00   01/07/124 15:48:55    Page 1
+C:\Users\marco\arquivos\repositorios\assembly-examples-for-8051\2-port-0\port-0.a51
+
+
+
+    1 0000              ; Autor: Marco Guilherme
+    2 0000              ; Ciclo de instrução: 1 µs
+    3 0000              ; Data: 05/01/2023
+    4 0000              ; MCU: AT89C51
+    5 0000              ; Frequência do clock: 12 MHz
+    6 0000              ; Alterna o nível lógico do port 0 entre alto e baixo
+    7 0000              
+    8 0000                  org 0000h                                                                   ; Origem do programa no endereço 0x00
+    9 0000              
+   10 0000              start:
+   11 0000 758000           mov P0, #00h                                                                ; Nível lógico baixo no port 0
+   12 0003 7580FF           mov P0, #0FFh                                                               ; Nível lógico alto no port 0
+   13 0006              
+   14 0006 020000           jmp start																	; Salta para o endereço marcado pela label start
+   15 0009              
+   16 0009                  end                                                                         ; Fim do programa
+
+Defined Symbols:
+
+Defined Labels:
+  START                                     000000  0

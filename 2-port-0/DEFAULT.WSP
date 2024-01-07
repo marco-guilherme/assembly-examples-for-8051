@@ -1,0 +1,13 @@
+Project=C:\Users\marco\arquivos\repositorios\assembly-examples-for-8051\2-port-0\port-0.a51
+ProcessorType=1
+DefaultFindDir=C:\Users\marco\arquivos\repositorios\assembly-examples-for-8051\2-port-0
+SectorSize=64
+EnablePagedMemory=0
+PagedMemoryControlAddress=0
+NumberOfMemoryPages=1
+SignalType=0
+EnableAutoUpdate=0
+UpdateCount=1000
+Window=8051,port-0.a51,C:\Users\marco\arquivos\repositorios\assembly-examples-for-8051\2-port-0\port-0.a51,87,142,556,1026
+Window=8051,port-0.a51,C:\Users\marco\arquivos\repositorios\assembly-examples-for-8051\2-port-0\port-0.a51,87,142,556,1026
+Window=Output,Output1,,514,30,728,1184

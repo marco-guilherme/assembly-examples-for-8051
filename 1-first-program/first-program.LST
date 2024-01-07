@@ -1,0 +1,28 @@
+8051 Assembler           Version 1.00   01/07/124 15:48:48    Page 1
+C:\Users\marco\arquivos\repositorios\assembly-examples-for-8051\1-first-program\first-program.a51
+
+
+
+    1 0000              ; Autor: Marco Guilherme
+    2 0000              ; Ciclo de instrução: 1 µs
+    3 0000              ; Data: 25/12/2023
+    4 0000              ; MCU: AT89C51
+    5 0000              ; Frequência do clock: 12 MHz
+    6 0000              ; Copia algumas constantes para alguns registradores
+    7 0000              
+    8 0000                  org 0000h                                                                   ; Origem do programa no endereço 0x00
+    9 0000              
+   10 0000              start:
+   11 0000 74FF             mov A, #0FFh                                                                ; Copia a constante literal 0xFF para o registrador acumulador
+   12 0002 7400             mov A, #00h                                                                 ; Zera o acumulador
+   13 0004 7855             mov R0, #55h
+   14 0006 75F0AA           mov B, #0AAh
+   15 0009              
+   16 0009 020009           jmp $                                                                       ; Segura o programa nesta linha
+   17 000C              
+   18 000C                  end                                                                         ; Fim do programa
+
+Defined Symbols:
+
+Defined Labels:
+  START                                     000000  0
