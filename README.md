@@ -12,8 +12,11 @@ Passo a passo para gerar o arquivo hexadecimal:
 4. `Assemble` > `Build`.  
 
 Os arquivos serão gerados no mesmo diretório do `*.a51`.  
-Após o build, é possível simular em `Simulate` > `Start Simulator`.
+Após o build, é possível simular/depurar em `Simulate` > `Start Simulator`.
 
 ## Informações Adicionais
 
 **IDE utilizada**: AceBus 8051 IDE evaluation 1.21
+
+**Simulador de eletrônica**: Proteus 8.6 SP2 (build 23525) with advanced
+simulation

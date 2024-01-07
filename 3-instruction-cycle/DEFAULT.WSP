@@ -1,0 +1,10 @@
+Project=
+ProcessorType=1
+DefaultFindDir=C:\Users\marco\arquivos\repositorios\assembly-examples-for-8051\3-instruction-cycle
+SectorSize=64
+EnablePagedMemory=0
+PagedMemoryControlAddress=0
+NumberOfMemoryPages=1
+SignalType=0
+EnableAutoUpdate=0
+UpdateCount=1000

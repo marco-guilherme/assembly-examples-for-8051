@@ -1,0 +1,28 @@
+8051 Assembler           Version 1.00   01/07/124 16:16:46    Page 1
+C:\Users\marco\arquivos\repositorios\assembly-examples-for-8051\3-instruction-cycle\instruction-cycle.a51
+
+
+
+    1 0000              ; Autor: Marco Guilherme
+    2 0000              ; Ciclo de instrução: 1 µs
+    3 0000              ; Data: 07/01/2023
+    4 0000              ; MCU: AT89C51
+    5 0000              ; Frequência do clock: 12 MHz
+    6 0000              ; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    7 0000              
+    8 0000                  org 0000h                                                                   ; Origem do programa no endereço 0x00
+    9 0000              
+   10 0000              start:
+   11 0000 7401             mov A, #01h
+   12 0002 75A000       	mov P2, #00h
+   13 0005 75A0FF       	mov P2, #0FFh
+   14 0008 7402         	mov A, #02h
+   15 000A              
+   16 000A 020000           jmp start																	; Salta para o endereço marcado pela label start
+   17 000D              
+   18 000D                  end                                                                         ; Fim do programa
+
+Defined Symbols:
+
+Defined Labels:
+  START                                     000000  0
