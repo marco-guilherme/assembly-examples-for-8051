@@ -1,4 +1,4 @@
-Project=
+Project=C:\Users\marco\arquivos\repositorios\assembly-examples-for-8051\3-instruction-cycle\instruction-cycle.a51
 ProcessorType=1
 DefaultFindDir=C:\Users\marco\arquivos\repositorios\assembly-examples-for-8051\3-instruction-cycle
 SectorSize=64
@@ -8,3 +8,8 @@ NumberOfMemoryPages=1
 SignalType=0
 EnableAutoUpdate=0
 UpdateCount=1000
+Window=8051,instruction-cycle.a51,C:\Users\marco\arquivos\repositorios\assembly-examples-for-8051\3-instruction-cycle\instruction-cycle.a51,30,30,499,951
+Window=Output,Output1,,514,30,728,1184
+Window=Register,Register1,,43,1231,315,1457
+Window=Port,Port1,,368,1245,506,1453
+Window=Watch,Watch1,,553,1207,675,1486

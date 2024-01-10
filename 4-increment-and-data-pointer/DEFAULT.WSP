@@ -1,0 +1,15 @@
+Project=C:\Users\marco\arquivos\repositorios\assembly-examples-for-8051\4-increment-and-data-pointer\increment-and-data-pointer.a51
+ProcessorType=1
+DefaultFindDir=C:\Users\marco\arquivos\repositorios\assembly-examples-for-8051\4-increment-and-data-pointer
+SectorSize=64
+EnablePagedMemory=0
+PagedMemoryControlAddress=0
+NumberOfMemoryPages=1
+SignalType=0
+EnableAutoUpdate=0
+UpdateCount=1000
+Window=8051,increment-and-data-pointer.a51,C:\Users\marco\arquivos\repositorios\assembly-examples-for-8051\4-increment-and-data-pointer\increment-and-data-pointer.a51,29,146,498,1067
+Window=8051,increment-and-data-pointer.a51,C:\Users\marco\arquivos\repositorios\assembly-examples-for-8051\4-increment-and-data-pointer\increment-and-data-pointer.a51,29,146,498,1067
+Window=Output,Output1,,514,30,728,1184
+Window=Register,Register1,,43,1231,369,1457
+Window=Watch,Watch1,,553,1207,675,1486

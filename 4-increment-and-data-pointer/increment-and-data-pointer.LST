@@ -1,0 +1,29 @@
+8051 Assembler           Version 1.00   01/09/124 23:41:12    Page 1
+C:\Users\marco\arquivos\repositorios\assembly-examples-for-8051\4-increment-and-data-pointer\increment-and-data-pointer.a51
+
+
+
+    1 0000              ; Autor: Marco Guilherme
+    2 0000              ; Ciclo de instrução: 1 µs
+    3 0000              ; Data: 09/01/2023
+    4 0000              ; MCU: AT89C51
+    5 0000              ; Frequência do clock: 12 MHz
+    6 0000              ; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    7 0000              
+    8 0000                  org 0000h                                                                   ; Origem do programa no endereço 0x00
+    9 0000              
+   10 0000              start:
+   11 0000 7401             mov A, #01h
+   12 0002 75F006           mov B, #00000110b
+   13 0005 7407             mov A, #7d
+   14 0007 04               inc A                                                                       ; Incrementa o acumulador em 1 unidade
+   15 0008 909957           mov DPTR, #9957h                                                            ; Move uma palavra de 16 bits para o registrador ponteiro de dados
+   16 000B              
+   17 000B 02000B           jmp $                                                                       ; Segura o programa nesta linha
+   18 000E              
+   19 000E                  end                                                                         ; Fim do programa
+
+Defined Symbols:
+
+Defined Labels:
+  START                                     000000  0
