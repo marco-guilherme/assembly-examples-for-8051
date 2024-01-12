@@ -1,0 +1,34 @@
+8051 Assembler           Version 1.00   01/12/124 00:30:50    Page 1
+C:\Users\marco\arquivos\repositorios\assembly-examples-for-8051\5-direct-and-indirect-addressing\direct-and-indirect-addressing.a51
+
+
+
+    1 0000              ; Autor: Marco Guilherme
+    2 0000              ; Ciclo de instrução: 1 µs
+    3 0000              ; Data: 11/01/2023
+    4 0000              ; MCU: AT89C51
+    5 0000              ; Frequência do clock: 12 MHz
+    6 0000              ; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    7 0000              
+    8 0000                  org 0000h                                                                   ; Origem do programa no endereço 0x00
+    9 0000              
+   10 0000              start:
+   11 0000              	; Endereçamento direto:
+   12 0000 7520BB           mov 20h, #0BBh                                                              ; Copia o valor 0xBB para o endereço de memória 0x20 (endereço de exemplo da Direct Memory ou DRAM)
+   13 0003 852023       	mov 23h, 20h																; Copia o conteúdo do endereço 0x20 para o endereço 0x23
+   14 0006 E5A0         	mov A, P2																	; Lê o port 2 no acumulador
+   15 0008 2523         	add A, 23h																	; Soma o conteúdo do acumulador com o conteúdo do endereço 0x23 e escreve o resultado de volta no acumulador (overflow)
+   16 000A              
+   17 000A                  ; Endereçamento indireto:
+   18 000A 7528BB       	mov 28h, #0BBh
+   19 000D 7928         	mov R1, #28h                                                                ; O registrador R1 atuará como um ponteiro para o endereço 0x28
+   20 000F E7           	mov A, @R1                                                                  ; Copia o conteúdo do endereço apontado por R1 para o acumulador
+   21 0010              
+   22 0010 0110             ajmp $                                                                     	; Segura o programa nesta linha
+   23 0012              
+   24 0012                  end                                                                         ; Fim do programa
+
+Defined Symbols:
+
+Defined Labels:
+  START                                     000000  0
