@@ -1,0 +1,30 @@
+8051 Assembler           Version 1.00   01/18/124 23:06:49    Page 1
+C:\Users\marco\arquivos\repositorios\assembly-examples-for-8051\6-general-purpose-registers\general-purpose-registers.a51
+
+
+
+    1 0000              ; Autor: Marco Guilherme
+    2 0000              ; Ciclo de instrução: 1 µs
+    3 0000              ; Data: 18/01/2023
+    4 0000              ; MCU: AT89C51
+    5 0000              ; Frequência do clock: 12 MHz
+    6 0000              ; Exemplo de como utilizar os registradores de uso geral do 8051.
+    7 0000              
+    8 0000                  org 0000h                                                                   ; Origem do programa no endereço 0x00
+    9 0000              
+   10 0000              start:
+   11 0000 790F         	mov R1, #0Fh
+   12 0002 E9           	mov A, R1
+   13 0003 FD           	mov R5, A
+   14 0004 0D           	inc R5
+   15 0005 0D           	inc R5
+   16 0006 0D           	inc R5
+   17 0007              
+   18 0007 0107             ajmp $                                                                     	; Segura o programa nesta linha
+   19 0009              
+   20 0009                  end                                                                         ; Fim do programa
+
+Defined Symbols:
+
+Defined Labels:
+  START                                     000000  0

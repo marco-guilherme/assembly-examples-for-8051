@@ -1,0 +1,14 @@
+Project=C:\Users\marco\arquivos\repositorios\assembly-examples-for-8051\6-general-purpose-registers\general-purpose-registers.a51
+ProcessorType=1
+DefaultFindDir=C:\Users\marco\arquivos\repositorios\assembly-examples-for-8051\6-general-purpose-registers
+SectorSize=64
+EnablePagedMemory=0
+PagedMemoryControlAddress=0
+NumberOfMemoryPages=1
+SignalType=0
+EnableAutoUpdate=0
+UpdateCount=1000
+Window=8051,general-purpose-registers.a51,C:\Users\marco\arquivos\repositorios\assembly-examples-for-8051\6-general-purpose-registers\general-purpose-registers.a51,14,2,483,923
+Window=Output,Output1,,514,30,728,1184
+Window=Register,Register1,,25,1234,351,1460
+Window=DRAM,DRAM1,,18,950,504,1188
