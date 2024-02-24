@@ -1,0 +1,15 @@
+Project=C:\Users\marco\arquivos\repositorios\assembly-examples-for-8051\7-arithmetic-operations\arithmetic-operations.a51
+ProcessorType=1
+DefaultFindDir=C:\Users\marco\arquivos\repositorios\assembly-examples-for-8051\7-arithmetic-operations
+SectorSize=64
+EnablePagedMemory=0
+PagedMemoryControlAddress=0
+NumberOfMemoryPages=1
+SignalType=0
+EnableAutoUpdate=0
+UpdateCount=1000
+Window=8051,arithmetic-operations.a51,C:\Users\marco\arquivos\repositorios\assembly-examples-for-8051\7-arithmetic-operations\arithmetic-operations.a51,5,3,495,1017
+Window=8051,arithmetic-operations.a51,C:\Users\marco\arquivos\repositorios\assembly-examples-for-8051\7-arithmetic-operations\arithmetic-operations.a51,5,3,495,1017
+Window=Output,Output1,,506,8,720,1162
+Window=Register,Register1,,13,1266,339,1492
+Window=DRAM,DRAM1,,23,1015,509,1253

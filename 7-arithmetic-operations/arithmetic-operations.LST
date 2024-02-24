@@ -1,0 +1,46 @@
+8051 Assembler           Version 1.00   02/23/124 21:37:18    Page 1
+C:\Users\marco\arquivos\repositorios\assembly-examples-for-8051\7-arithmetic-operations\arithmetic-operations.a51
+
+
+
+    1 0000              ; Autor: Marco Guilherme
+    2 0000              ; Ciclo de instrução: 1 µs
+    3 0000              ; Data: 23/02/2023
+    4 0000              ; MCU: AT89C51
+    5 0000              ; Frequência do clock: 12 MHz
+    6 0000              ; Exemplo de como utilizar as operações ariméticas com os GPRs.
+    7 0000              
+    8 0000                  org 0000h
+    9 0000              
+   10 0000              start:
+   11 0000 740A             mov A, #0Ah
+   12 0002 75F003           mov B, #03h
+   13 0005 752306           mov 23h, #06h
+   14 0008 75200F           mov 20h, #0Fh
+   15 000B              
+   16 000B                  ; Soma
+   17 000B 2523             add A, 23h                                                                  ; O acumulador recebe o conteúdo dele mesmo mais o conteúdo do endereço 0x23 (A = A + @0x23)
+   18 000D 04               inc A                                                                       ; A = A + 1
+   19 000E 15F0             dec B                                                                       ; B = B + 1
+   20 0010              
+   21 0010                  ; Subtração
+   22 0010 9520             subb A, 20h                                                                 ; A = A - @0x20
+   23 0012              
+   24 0012                  ; Multiplicação
+   25 0012 740C             mov A, #0Ch
+   26 0014 75F008           mov B, #08h
+   27 0017 A4               mul AB                                                                      ; Multiplica A por B e atribui o MSB em B e o LSB em A
+   28 0018              
+   29 0018                  ; Divisão
+   30 0018 7445             mov A, #45h
+   31 001A 75F007           mov B, #07h
+   32 001D 84               div AB                                                                      ; Divide A por B e atribui o quociente em A e o resto em B
+   33 001E              
+   34 001E 011E             ajmp $
+   35 0020              
+   36 0020                  end
+
+Defined Symbols:
+
+Defined Labels:
+  START                                     000000  0
