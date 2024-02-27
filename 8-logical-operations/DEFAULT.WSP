@@ -1,0 +1,14 @@
+Project=C:\Users\marco\arquivos\repositorios\assembly-examples-for-8051\8-logical-operations\logical-operations.a51
+ProcessorType=1
+DefaultFindDir=C:\Users\marco\arquivos\repositorios\assembly-examples-for-8051\8-logical-operations
+SectorSize=64
+EnablePagedMemory=0
+PagedMemoryControlAddress=0
+NumberOfMemoryPages=1
+SignalType=0
+EnableAutoUpdate=0
+UpdateCount=1000
+Window=8051,logical-operations.a51,C:\Users\marco\arquivos\repositorios\assembly-examples-for-8051\8-logical-operations\logical-operations.a51,5,3,495,1017
+Window=Output,Output1,,506,8,720,1162
+Window=Register,Register1,,13,1266,339,1492
+Window=ConReg,ConReg1,,16,1049,502,1255

@@ -1,0 +1,79 @@
+8051 Assembler           Version 1.00   02/26/124 23:14:18    Page 1
+C:\Users\marco\arquivos\repositorios\assembly-examples-for-8051\8-logical-operations\logical-operations.a51
+
+
+
+    1 0000              ; Autor: Marco Guilherme
+    2 0000              ; Ciclo de instrução: 1 µs
+    3 0000              ; Data: 26/02/2023
+    4 0000              ; MCU: AT89C51
+    5 0000              ; Frequência do clock: 12 MHz
+    6 0000              ; Exemplo de como realizar operações lógicas.
+    7 0000              
+    8 0000                  org 0000h
+    9 0000              
+   10 0000              start:
+   11 0000 7453             mov A, #01010011b
+   12 0002 75F029       	mov B, #00101001b
+   13 0005              
+   14 0005                  ; AND
+   15 0005 55F0             anl A, B                                                                    ; A = A & B
+   16 0007              
+   17 0007                  ; OR
+   18 0007 45F0         	orl A, B                                                                    ; A = A | B
+   19 0009              
+   20 0009                  ; NOT (complemento de 1)
+   21 0009 F4               cpl A                                                                       ; A = ~A
+   22 000A              
+   23 000A                  ; XOR (a saída só será 1 se houver uma quantidade ímpar de 1's nas entradas)
+   24 000A 65F0         	XRL A, B                                                                    ; A = A ^ B
+   25 000C              
+   26 000C 74EB             mov A, #11101011b
+   27 000E 75F015       	mov B, #00010101b
+   28 0011              
+   29 0011                  ; XNOR (a saída só será 1 se houver uma quantidade par de 1's nas entradas)
+   30 0011 65F0         	XRL A, B
+   31 0013 F4           	cpl A                                                                       ; ~(A ^ B)
+   32 0014              
+   33 0014                  ; Limpa o acumulador
+   34 0014 E4           	clr A                                                                       ; A = 0x00
+   35 0015              	
+   36 0015 4401         	orl A, #01h
+   37 0017              
+   38 0017                  ; Rotação para a esquerda (não usa o bit de carry)
+   39 0017 23               rl A                                                                        ; A = A << 1
+   40 0018 23           	rl A
+   41 0019 23           	rl A
+   42 001A              
+   43 001A                  ; Rotação para a direita
+   44 001A 03               rr A                                                                        ; A = A >> 1
+   45 001B 03           	rr A
+   46 001C 03           	rr A
+   47 001D 03           	rr A
+   48 001E              
+   49 001E 74AD             mov A, #10101101b
+   50 0020              
+   51 0020                  ; Rotação para a esquerda com bit de carry
+   52 0020 33           	rlc A
+   53 0021              
+   54 0021              	; Rotação para a direta com bit de carry
+   55 0021 13               rrc A
+   56 0022              
+   57 0022                  ; Swap
+8051 Assembler           Version 1.00   02/26/124 23:14:18    Page 2
+C:\Users\marco\arquivos\repositorios\assembly-examples-for-8051\8-logical-operations\logical-operations.a51
+
+
+
+   58 0022 740F             mov A, #0Fh
+   59 0024 C4           	swap A                                                                      ; Swap nos nibbles do acumulador
+   60 0025 C4           	swap A                                                                      ; Anula o swap
+   61 0026              
+   62 0026 0126             ajmp $
+   63 0028              
+   64 0028                  end
+
+Defined Symbols:
+
+Defined Labels:
+  START                                     000000  0
